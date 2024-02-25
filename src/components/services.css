@@ -1,0 +1,64 @@
+/* CSS for the line */
+.line {
+  position: relative; /* Set position to relative */
+  width: 0; /* Start with width 0 */
+  height: 2px; /* Set height of the line */
+  background-color: #000; /* Set line color */
+  margin-top: 10px; /* Set top margin */
+  animation: expandLine 2s ease-in-out forwards; /* Apply animation */
+}
+
+/* Animation keyframes for expanding line */
+@keyframes expandLine {
+  0% {
+      left: 50%; /* Start from the center */
+      width: 0; /* Start with width 0 */
+  }
+  100% {
+      left: 0; /* Move to left edge */
+      width: 100%; /* Expand to full width */
+  }
+}
+
+
+
+.with-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow properties as needed */
+  }
+  
+/* Add this CSS to your stylesheet */
+.card-body {
+    transition: transform 0.3s; /* Add transition for smooth effect */
+  }
+  
+  .card-body:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+  }
+  
+  /* services.css */
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up by 5px on hover */
+}
+
+.scroll-indicator p {
+  animation: bounce 1s infinite alternate; /* Apply bounce animation to scroll indicator */
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-5px);
+  }
+}
+
+.card-body2{
+  margin-top: 30px;
+}

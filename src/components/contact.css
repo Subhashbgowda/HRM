@@ -1,0 +1,175 @@
+/* CSS for contact-us section */
+.contact-us {
+    position: relative; /* Ensure proper positioning */
+    text-align: center; /* Center-align content */
+    background-image: url("../../public/images/night.jpg");
+    background-size: contain; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    opacity: 90%;
+}
+
+.contact-us-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the entire container */
+    z-index: -1; /* Ensure the image stays behind the content */
+}
+
+.contact-us-content {
+    position: relative; /* Ensure content appears above the background image */
+    z-index: 1; /* Ensure content appears above the background image */
+    padding: 50px; /* Add padding for readability */
+    color: white; /* Set text color to white */
+    animation: slideInContent 1.5s ease-out; /* Apply slideInContent animation */
+}
+
+.bold-dark {
+    font-weight: bold;
+    color: #ffffff; /* Dark color */
+    text-align: left; /* Align text to the left */
+}
+
+/* Define slideInContent animation */
+@keyframes slideInContent {
+    0% {
+        transform: translateY(-50px); /* Start slightly above its final position */
+        opacity: 0; /* Start with zero opacity */
+    }
+    100% {
+        transform: translateY(0); /* Move to final position */
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+.contact-us {
+    position: relative; /* Make sure the overlay is positioned relative to this container */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black color */
+    animation: fadeInOverlay 1.5s ease-out; /* Apply fadeInOverlay animation */
+}
+
+/* Define fadeInOverlay animation */
+@keyframes fadeInOverlay {
+    0% {
+        opacity: 0; /* Start with zero opacity */
+    }
+    100% {
+        opacity: 1; /* End with full opacity */
+    }
+}
+
+ /* Add vibrating animation to phone icon */
+/* Add vibrating animation to phone icon */
+@keyframes phoneVibrate {
+    0% {
+        transform: translateX(0); /* Start position (no translation) */
+    }
+    25% {
+        transform: translateX(-5px); /* Vibrate left */
+    }
+    50% {
+        transform: translateX(5px); /* Vibrate right */
+    }
+    75% {
+        transform: translateX(-5px); /* Vibrate left */
+    }
+    100% {
+        transform: translateX(0); /* End position (no translation) */
+    }
+}
+
+/* Apply vibrating animation to phone icon */
+.phone-icon {
+    animation: phoneVibrate 1s ease-in-out 2s 10; /* Vibrate animation with 0.1-second duration, ease-in-out timing function, 2-second delay, and vibrate three times */
+    margin-right: 5px; /* Add some margin to separate the icon from other elements */
+}
+
+.contact-us {
+    position: relative;
+    text-align: center;
+}
+
+.contact-us-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-us-content {
+     
+    position: relative; /* Ensure content appears above the background image */
+    z-index: 1; /* Ensure content appears above the background image */
+    padding: 50px; /* Add padding for readability */
+    color: white; /* Set text color to white */
+    text-align: left;
+}
+
+.bold-dark {
+    font-weight: bold;
+    color: #f2f4f7;
+    text-align: left;
+}
+
+.form-background {
+    position: relative;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the background image is behind the form */
+}
+
+.fade-in-form input[type="text"],
+.fade-in-form input[type="email"],
+.fade-in-form input[type="message"],
+
+.fade-in-form textarea {
+    background-color: transparent; /* Set input background to transparent */
+    border: 1px solid #ccc; /* Add border for visibility */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    padding: 10px; /* Adjust padding as needed */
+    width: 100%; /* Ensure input fields take up full width */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+ 
+
+.contact-us {
+    margin-bottom: 20px; /* Add margin at the bottom of the contact section */
+}
+
+.form-background {
+    padding-top: 20px; /* Add padding at the top of the form section */
+}
+ 
+.bold-white {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
